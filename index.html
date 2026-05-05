@@ -1,91 +1,123 @@
-<!-- force rebuild -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Kemcee Cakes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kemceekakes – Abuja</title>
 
-  <style>
-    body { margin:0; font-family: Arial; background:#f6eee6; }
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f5ede3;
+}
 
-    header {
-      display:flex; justify-content:space-between; align-items:center;
-      background:#f3e8dc; padding:12px;
-      position:sticky; top:0;
-    }
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  background:#f5ede3;
+  position:sticky;
+  top:0;
+}
 
-    header h2 { margin:0; color:#5a2d0c; }
+.logo{
+  font-weight:bold;
+  font-size:18px;
+}
 
-    .btn {
-      background:#d46a7a; color:white;
-      padding:10px 15px; border-radius:10px;
-      text-decoration:none;
-    }
+.btn{
+  background:#c95f72;
+  color:white;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+}
 
-    .hero {
-      background:#6b3e26; color:white;
-      padding:30px 20px;
-    }
+/* HERO */
+.hero{
+  background:#5c2d1a;
+  color:white;
+  padding:30px 20px;
+}
 
-    .section { padding:20px; }
+.hero h1{
+  font-size:26px;
+}
 
-    .card {
-      background:white;
-      border-radius:15px;
-      margin:15px 0;
-      overflow:hidden;
-    }
+/* SECTION */
+.section{
+  padding:20px;
+}
 
-    .card img { width:100%; }
+/* CAKES */
+.card{
+  background:white;
+  border-radius:15px;
+  margin:15px 0;
+  overflow:hidden;
+}
 
-    .card h3 { padding:10px; }
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
 
-    .brown {
-      background:#6b3e26; color:white;
-      padding:25px;
-    }
+.card h3{
+  padding:10px;
+}
 
-    .link-btn {
-      display:block;
-      margin:10px 0;
-      padding:12px;
-      border-radius:10px;
-      text-align:center;
-      text-decoration:none;
-      font-weight:bold;
-    }
+/* CONTACT */
+.contact{
+  background:#5c2d1a;
+  color:white;
+  padding:20px;
+}
 
-    .call { background:#d46a7a; color:white; }
+.contact a{
+  display:block;
+  margin:10px 0;
+  padding:12px;
+  text-align:center;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-    .outline {
-      border:2px solid white;
-      color:white;
-    }
+.call{ background:#c95f72; color:white; }
+.whatsapp{ background:#25D366; color:white; }
+.instagram{ border:2px solid white; color:white; }
 
-    .footer {
-      background:#6b3e26;
-      color:white;
-      text-align:center;
-      padding:20px;
-    }
-  </style>
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:15px;
+  background:#5c2d1a;
+  color:white;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h2>🍰 Kemceekakes</h2>
-  <a href="tel:+2348066578248" class="btn">Order Now</a>
-</header>
+<!-- NAV -->
+<nav>
+  <div class="logo">🎂 Kemceekakes</div>
+  <a href="tel:+2348066578248" class="btn">Order</a>
+</nav>
 
+<!-- HERO -->
 <div class="hero">
-  <h1>Stop by, say hello, taste something sweet.</h1>
-  <p>Premium cakes made in Abuja.</p>
+  <h1>Cakes baked with love ❤️</h1>
+  <p>Premium cakes in Abuja for birthdays, weddings & more.</p>
 </div>
 
+<!-- CAKES -->
 <div class="section">
 
-  <!-- YOUR IMAGES AUTO SHOW HERE -->
   <div class="card">
     <img src="cake1.jpg">
     <h3>Luxury Cake</h3>
@@ -103,26 +135,29 @@
 
 </div>
 
-<div class="brown">
+<!-- CONTACT -->
+<div class="contact">
 
-  <h2>Our Bakery</h2>
-  <p>No 5 Eternity Avenue, Lugbe, Abuja</p>
+  <h2>Contact Us</h2>
 
-  <h3>Call to Order</h3>
-  <p>+234 806 657 8248</p>
+  <p>📍 No 5 Eternity Avenue, Lugbe, Abuja</p>
+  <p>📞 +234 806 657 8248</p>
 
-  <p>Open daily • Closes 9:00 PM</p>
+  <a href="tel:+2348066578248" class="call">📞 Call Now</a>
 
-  <a href="tel:+2348066578248" class="link-btn call">📞 Call Now</a>
+  <a href="https://wa.me/2348066578248" class="whatsapp">
+    💬 WhatsApp
+  </a>
 
-  <a href="https://www.instagram.com/kemceekakes?igsh=bmViNXJoejRvaWdm"
-     class="link-btn outline">📷 Instagram</a>
+  <a href="https://www.instagram.com/kemceekakes?igsh=bmViNXJoejRvaWdm" class="instagram">
+    📷 Instagram
+  </a>
 
 </div>
 
-<div class="footer">
-  © 2026 Kemceekakes. Baked with love in Abuja.
-</div>
+<footer>
+  © 2026 Kemceekakes
+</footer>
 
 </body>
 </html>
