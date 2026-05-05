@@ -5,91 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #f6eee6;
-    }
+    body { margin:0; font-family: Arial; background:#f6eee6; }
 
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #f3e8dc;
-      padding: 10px 15px;
-      position: sticky;
-      top: 0;
+      display:flex; justify-content:space-between; align-items:center;
+      background:#f3e8dc; padding:12px;
+      position:sticky; top:0;
     }
 
-    header h2 {
-      margin: 0;
-      color: #5a2d0c;
-    }
+    header h2 { margin:0; color:#5a2d0c; }
 
     .btn {
-      background: #d46a7a;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .section {
-      padding: 20px;
+      background:#d46a7a; color:white;
+      padding:10px 15px; border-radius:10px;
+      text-decoration:none;
     }
 
     .hero {
-      background: #6b3e26;
-      color: white;
-      padding: 30px 20px;
-      border-radius: 0 0 20px 20px;
+      background:#6b3e26; color:white;
+      padding:30px 20px;
     }
+
+    .section { padding:20px; }
 
     .card {
-      background: white;
-      border-radius: 15px;
-      padding: 15px;
-      margin: 15px 0;
+      background:white;
+      border-radius:15px;
+      margin:15px 0;
+      overflow:hidden;
     }
 
-    img {
-      width: 100%;
-      border-radius: 15px;
-    }
+    .card img { width:100%; }
+
+    .card h3 { padding:10px; }
 
     .brown {
-      background: #6b3e26;
-      color: white;
-      padding: 25px;
-      border-radius: 20px;
-    }
-
-    .footer {
-      background: #6b3e26;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background:#6b3e26; color:white;
+      padding:25px;
     }
 
     .link-btn {
-      display: block;
-      margin: 10px 0;
-      padding: 12px;
-      border-radius: 10px;
-      text-decoration: none;
-      text-align: center;
-      font-weight: bold;
+      display:block;
+      margin:10px 0;
+      padding:12px;
+      border-radius:10px;
+      text-align:center;
+      text-decoration:none;
+      font-weight:bold;
     }
 
-    .call {
-      background: #d46a7a;
-      color: white;
-    }
+    .call { background:#d46a7a; color:white; }
 
     .outline {
-      border: 2px solid white;
-      color: white;
+      border:2px solid white;
+      color:white;
+    }
+
+    .footer {
+      background:#6b3e26;
+      color:white;
+      text-align:center;
+      padding:20px;
     }
   </style>
 </head>
@@ -102,20 +78,21 @@
 </header>
 
 <div class="hero">
-  <h1>Luxury Cakes in Abuja</h1>
-  <p>Beautiful, custom-made cakes for every occasion.</p>
+  <h1>Stop by, say hello, taste something sweet.</h1>
+  <p>Premium cakes made in Abuja.</p>
 </div>
 
 <div class="section">
 
+  <!-- YOUR IMAGES AUTO SHOW HERE -->
   <div class="card">
     <img src="cake1.jpg">
-    <h3>Luxury Birthday Cake</h3>
+    <h3>Luxury Cake</h3>
   </div>
 
   <div class="card">
     <img src="cake2.jpg">
-    <h3>Custom Kids Cake</h3>
+    <h3>Custom Cake</h3>
   </div>
 
   <div class="card">
@@ -125,7 +102,7 @@
 
 </div>
 
-<div class="section brown">
+<div class="brown">
 
   <h2>Our Bakery</h2>
   <p>No 5 Eternity Avenue, Lugbe, Abuja</p>
@@ -133,19 +110,17 @@
   <h3>Call to Order</h3>
   <p>+234 806 657 8248</p>
 
-  <h3>Opening Hours</h3>
   <p>Open daily • Closes 9:00 PM</p>
 
   <a href="tel:+2348066578248" class="link-btn call">📞 Call Now</a>
 
-  <a href="https://www.instagram.com/kemceekakes?igsh=bmViNXJoejRvaWdm" class="link-btn outline">
-    📷 View Instagram
-  </a>
+  <a href="https://www.instagram.com/kemceekakes?igsh=bmViNXJoejRvaWdm"
+     class="link-btn outline">📷 Instagram</a>
 
 </div>
 
 <div class="footer">
-  <p>© 2026 Kemceekakes. Baked with love in Abuja.</p>
+  © 2026 Kemceekakes. Baked with love in Abuja.
 </div>
 
 </body>
