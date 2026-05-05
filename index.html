@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kemceekakes – Abuja</title>
+<title>Kemceekakes – Bakery in Abuja</title>
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
 body{
-  margin:0;
   font-family:Arial;
   background:#f5ede3;
+  color:#4a1e0f;
 }
 
 /* NAV */
@@ -17,7 +19,7 @@ nav{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:12px;
+  padding:15px;
   background:#f5ede3;
   position:sticky;
   top:0;
@@ -31,126 +33,181 @@ nav{
 .btn{
   background:#c95f72;
   color:white;
-  padding:10px 14px;
-  border-radius:10px;
+  padding:10px 18px;
+  border-radius:30px;
   text-decoration:none;
 }
 
 /* HERO */
 .hero{
-  background:#5c2d1a;
+  height:90vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)),
+  url('cake1.jpg') center/cover;
   color:white;
-  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:30px;
 }
 
 .hero h1{
-  font-size:26px;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  margin-bottom:20px;
+}
+
+.hero .btn{
+  display:inline-block;
+  margin-bottom:10px;
 }
 
 /* SECTION */
 .section{
-  padding:20px;
+  padding:25px;
 }
 
-/* CAKES */
-.card{
+/* FEATURES */
+.feature{
   background:white;
+  padding:20px;
   border-radius:15px;
-  margin:15px 0;
-  overflow:hidden;
+  margin-bottom:15px;
 }
 
-.card img{
+/* CAKES GRID */
+.cake{
+  position:relative;
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:15px;
+}
+
+.cake img{
   width:100%;
   height:250px;
   object-fit:cover;
 }
 
-.card h3{
-  padding:10px;
+.overlay{
+  position:absolute;
+  bottom:0;
+  background:linear-gradient(transparent,rgba(0,0,0,0.8));
+  color:white;
+  width:100%;
+  padding:15px;
+}
+
+/* REVIEWS */
+.review{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:15px;
 }
 
 /* CONTACT */
 .contact{
   background:#5c2d1a;
   color:white;
-  padding:20px;
+  padding:30px;
 }
 
 .contact a{
   display:block;
   margin:10px 0;
   padding:12px;
-  text-align:center;
   border-radius:10px;
+  text-align:center;
   text-decoration:none;
-  font-weight:bold;
 }
 
-.call{ background:#c95f72; color:white; }
-.whatsapp{ background:#25D366; color:white; }
-.instagram{ border:2px solid white; color:white; }
+.call{background:#c95f72;color:white;}
+.whatsapp{background:#25D366;color:white;}
+.instagram{border:2px solid white;color:white;}
 
 /* FOOTER */
 footer{
-  text-align:center;
-  padding:15px;
   background:#5c2d1a;
   color:white;
+  text-align:center;
+  padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo">🎂 Kemceekakes</div>
-  <a href="tel:+2348066578248" class="btn">Order</a>
+  <a href="tel:+2348066578248" class="btn">Order Now</a>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
-  <h1>Cakes baked with love ❤️</h1>
-  <p>Premium cakes in Abuja for birthdays, weddings & more.</p>
+  <h1>Cakes baked with love</h1>
+  <p>Luxury cakes in Abuja for every celebration.</p>
+  <a href="tel:+2348066578248" class="btn">📞 Call</a>
+  <a href="https://wa.me/2348066578248" class="btn">💬 WhatsApp</a>
 </div>
 
-<!-- CAKES -->
 <div class="section">
+  <h2>Why Choose Us</h2>
 
-  <div class="card">
+  <div class="feature">🎂 Custom Cakes for all events</div>
+  <div class="feature">❤️ Made with love</div>
+  <div class="feature">🚚 Delivery available</div>
+</div>
+
+<div class="section">
+  <h2>Our Cakes</h2>
+
+  <div class="cake">
     <img src="cake1.jpg">
-    <h3>Luxury Cake</h3>
+    <div class="overlay">
+      <h3>Wedding Cakes</h3>
+      <p>Elegant and beautiful</p>
+    </div>
   </div>
 
-  <div class="card">
+  <div class="cake">
     <img src="cake2.jpg">
-    <h3>Custom Cake</h3>
+    <div class="overlay">
+      <h3>Birthday Cakes</h3>
+      <p>Perfect for celebrations</p>
+    </div>
   </div>
 
-  <div class="card">
+  <div class="cake">
     <img src="cake3.jpg">
-    <h3>Wedding Cake</h3>
+    <div class="overlay">
+      <h3>Custom Cakes</h3>
+      <p>Designed your way</p>
+    </div>
   </div>
 
 </div>
 
-<!-- CONTACT -->
+<div class="section">
+  <h2>Reviews</h2>
+
+  <div class="review">⭐⭐⭐⭐⭐ Great cake. Great baker.</div>
+  <div class="review">⭐⭐⭐⭐⭐ Amazing taste and design!</div>
+
+</div>
+
 <div class="contact">
+  <h2>Contact</h2>
 
-  <h2>Contact Us</h2>
-
-  <p>📍 No 5 Eternity Avenue, Lugbe, Abuja</p>
+  <p>📍 Lugbe, Abuja</p>
   <p>📞 +234 806 657 8248</p>
 
-  <a href="tel:+2348066578248" class="call">📞 Call Now</a>
-
-  <a href="https://wa.me/2348066578248" class="whatsapp">
-    💬 WhatsApp
-  </a>
-
+  <a href="tel:+2348066578248" class="call">Call Now</a>
+  <a href="https://wa.me/2348066578248" class="whatsapp">WhatsApp</a>
   <a href="https://www.instagram.com/kemceekakes?igsh=bmViNXJoejRvaWdm" class="instagram">
-    📷 Instagram
+    Instagram
   </a>
 
 </div>
